@@ -29,6 +29,9 @@ def rounder(num, num_round):
     # now move the decimal place back to where it was originally
     num[0] = (num[0] / (10**num_round))
 
+    if (num_round == 0):
+        num[0] = int(num[0])
+
 
 # main function
 def main():
